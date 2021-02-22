@@ -10,6 +10,9 @@
 		B224B67F25E3BD8B005FE7D5 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224B67E25E3BD8B005FE7D5 /* CustomTabBarViewController.swift */; };
 		B224B68425E3BDD6005FE7D5 /* PrimeNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224B68325E3BDD6005FE7D5 /* PrimeNumbersViewController.swift */; };
 		B224B68825E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224B68725E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift */; };
+		B245460E25E3CA8300AE7BB3 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245460D25E3CA8300AE7BB3 /* NumberCollectionViewCell.swift */; };
+		B245461225E3CAAD00AE7BB3 /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245461125E3CAAD00AE7BB3 /* PrimeCalculator.swift */; };
+		B245461525E3CACB00AE7BB3 /* FibonacciCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245461425E3CACB00AE7BB3 /* FibonacciCalculator.swift */; };
 		B2D8A68325E3BA7100934837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A68225E3BA7100934837 /* AppDelegate.swift */; };
 		B2D8A68C25E3BA7200934837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D8A68B25E3BA7200934837 /* Assets.xcassets */; };
 		B2D8A68F25E3BA7200934837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D8A68D25E3BA7200934837 /* LaunchScreen.storyboard */; };
@@ -19,6 +22,9 @@
 		B224B67E25E3BD8B005FE7D5 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		B224B68325E3BDD6005FE7D5 /* PrimeNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersViewController.swift; sourceTree = "<group>"; };
 		B224B68725E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumbersViewController.swift; sourceTree = "<group>"; };
+		B245460D25E3CA8300AE7BB3 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		B245461125E3CAAD00AE7BB3 /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
+		B245461425E3CACB00AE7BB3 /* FibonacciCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciCalculator.swift; sourceTree = "<group>"; };
 		B2D8A67F25E3BA7100934837 /* Numberator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numberator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D8A68225E3BA7100934837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D8A68B25E3BA7200934837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,28 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B224B68125E3BD9D005FE7D5 /* TabBar VC */ = {
+		B224B68125E3BD9D005FE7D5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				B224B67E25E3BD8B005FE7D5 /* CustomTabBarViewController.swift */,
+				B245460D25E3CA8300AE7BB3 /* NumberCollectionViewCell.swift */,
+				B29C802F25E3D869008AC21E /* Prime Numbers */,
+				B29C803025E3D872008AC21E /* Fibonacci Numbers */,
 			);
-			path = "TabBar VC";
-			sourceTree = "<group>";
-		};
-		B224B68A25E3BE01005FE7D5 /* PrimeNumbers VC */ = {
-			isa = PBXGroup;
-			children = (
-				B224B68325E3BDD6005FE7D5 /* PrimeNumbersViewController.swift */,
-			);
-			path = "PrimeNumbers VC";
-			sourceTree = "<group>";
-		};
-		B224B68C25E3BE0E005FE7D5 /* FibonacciNumbers VC */ = {
-			isa = PBXGroup;
-			children = (
-				B224B68725E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift */,
-			);
-			path = "FibonacciNumbers VC";
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		B224B68F25E3BE25005FE7D5 /* Supporting Files */ = {
@@ -69,6 +62,24 @@
 				B2D8A69025E3BA7200934837 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B29C802F25E3D869008AC21E /* Prime Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				B224B68325E3BDD6005FE7D5 /* PrimeNumbersViewController.swift */,
+				B245461125E3CAAD00AE7BB3 /* PrimeCalculator.swift */,
+			);
+			path = "Prime Numbers";
+			sourceTree = "<group>";
+		};
+		B29C803025E3D872008AC21E /* Fibonacci Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				B224B68725E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift */,
+				B245461425E3CACB00AE7BB3 /* FibonacciCalculator.swift */,
+			);
+			path = "Fibonacci Numbers";
 			sourceTree = "<group>";
 		};
 		B2D8A67625E3BA7100934837 = {
@@ -91,9 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D8A68225E3BA7100934837 /* AppDelegate.swift */,
-				B224B68125E3BD9D005FE7D5 /* TabBar VC */,
-				B224B68A25E3BE01005FE7D5 /* PrimeNumbers VC */,
-				B224B68C25E3BE0E005FE7D5 /* FibonacciNumbers VC */,
+				B224B68125E3BD9D005FE7D5 /* View Controllers */,
 				B224B68F25E3BE25005FE7D5 /* Supporting Files */,
 			);
 			path = Numberator;
@@ -168,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B245460E25E3CA8300AE7BB3 /* NumberCollectionViewCell.swift in Sources */,
+				B245461525E3CACB00AE7BB3 /* FibonacciCalculator.swift in Sources */,
 				B224B68825E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift in Sources */,
 				B224B67F25E3BD8B005FE7D5 /* CustomTabBarViewController.swift in Sources */,
+				B245461225E3CAAD00AE7BB3 /* PrimeCalculator.swift in Sources */,
 				B224B68425E3BDD6005FE7D5 /* PrimeNumbersViewController.swift in Sources */,
 				B2D8A68325E3BA7100934837 /* AppDelegate.swift in Sources */,
 			);
