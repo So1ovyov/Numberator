@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B224B67F25E3BD8B005FE7D5 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224B67E25E3BD8B005FE7D5 /* CustomTabBarViewController.swift */; };
+		B224B68425E3BDD6005FE7D5 /* PrimeNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224B68325E3BDD6005FE7D5 /* PrimeNumbersViewController.swift */; };
+		B224B68825E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224B68725E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift */; };
 		B2D8A68325E3BA7100934837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A68225E3BA7100934837 /* AppDelegate.swift */; };
-		B2D8A68525E3BA7100934837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A68425E3BA7100934837 /* SceneDelegate.swift */; };
-		B2D8A68725E3BA7100934837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A68625E3BA7100934837 /* ViewController.swift */; };
-		B2D8A68A25E3BA7100934837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D8A68825E3BA7100934837 /* Main.storyboard */; };
 		B2D8A68C25E3BA7200934837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D8A68B25E3BA7200934837 /* Assets.xcassets */; };
 		B2D8A68F25E3BA7200934837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D8A68D25E3BA7200934837 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B224B67E25E3BD8B005FE7D5 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		B224B68325E3BDD6005FE7D5 /* PrimeNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersViewController.swift; sourceTree = "<group>"; };
+		B224B68725E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciNumbersViewController.swift; sourceTree = "<group>"; };
 		B2D8A67F25E3BA7100934837 /* Numberator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numberator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D8A68225E3BA7100934837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2D8A68425E3BA7100934837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2D8A68625E3BA7100934837 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2D8A68925E3BA7100934837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D8A68B25E3BA7200934837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2D8A68E25E3BA7200934837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2D8A69025E3BA7200934837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +37,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B224B68125E3BD9D005FE7D5 /* TabBar VC */ = {
+			isa = PBXGroup;
+			children = (
+				B224B67E25E3BD8B005FE7D5 /* CustomTabBarViewController.swift */,
+			);
+			path = "TabBar VC";
+			sourceTree = "<group>";
+		};
+		B224B68A25E3BE01005FE7D5 /* PrimeNumbers VC */ = {
+			isa = PBXGroup;
+			children = (
+				B224B68325E3BDD6005FE7D5 /* PrimeNumbersViewController.swift */,
+			);
+			path = "PrimeNumbers VC";
+			sourceTree = "<group>";
+		};
+		B224B68C25E3BE0E005FE7D5 /* FibonacciNumbers VC */ = {
+			isa = PBXGroup;
+			children = (
+				B224B68725E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift */,
+			);
+			path = "FibonacciNumbers VC";
+			sourceTree = "<group>";
+		};
+		B224B68F25E3BE25005FE7D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8A68B25E3BA7200934837 /* Assets.xcassets */,
+				B2D8A68D25E3BA7200934837 /* LaunchScreen.storyboard */,
+				B2D8A69025E3BA7200934837 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B2D8A67625E3BA7100934837 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				B2D8A68225E3BA7100934837 /* AppDelegate.swift */,
-				B2D8A68425E3BA7100934837 /* SceneDelegate.swift */,
-				B2D8A68625E3BA7100934837 /* ViewController.swift */,
-				B2D8A68825E3BA7100934837 /* Main.storyboard */,
-				B2D8A68B25E3BA7200934837 /* Assets.xcassets */,
-				B2D8A68D25E3BA7200934837 /* LaunchScreen.storyboard */,
-				B2D8A69025E3BA7200934837 /* Info.plist */,
+				B224B68125E3BD9D005FE7D5 /* TabBar VC */,
+				B224B68A25E3BE01005FE7D5 /* PrimeNumbers VC */,
+				B224B68C25E3BE0E005FE7D5 /* FibonacciNumbers VC */,
+				B224B68F25E3BE25005FE7D5 /* Supporting Files */,
 			);
 			path = Numberator;
 			sourceTree = "<group>";
@@ -126,7 +158,6 @@
 			files = (
 				B2D8A68F25E3BA7200934837 /* LaunchScreen.storyboard in Resources */,
 				B2D8A68C25E3BA7200934837 /* Assets.xcassets in Resources */,
-				B2D8A68A25E3BA7100934837 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D8A68725E3BA7100934837 /* ViewController.swift in Sources */,
+				B224B68825E3BDFB005FE7D5 /* FibonacciNumbersViewController.swift in Sources */,
+				B224B67F25E3BD8B005FE7D5 /* CustomTabBarViewController.swift in Sources */,
+				B224B68425E3BDD6005FE7D5 /* PrimeNumbersViewController.swift in Sources */,
 				B2D8A68325E3BA7100934837 /* AppDelegate.swift in Sources */,
-				B2D8A68525E3BA7100934837 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2D8A68825E3BA7100934837 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2D8A68925E3BA7100934837 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2D8A68D25E3BA7200934837 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +312,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W2W2AQ8GG8;
-				INFOPLIST_FILE = Numberator/Info.plist;
+				INFOPLIST_FILE = "Numberator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solovyov.Numberator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +332,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W2W2AQ8GG8;
-				INFOPLIST_FILE = Numberator/Info.plist;
+				INFOPLIST_FILE = "Numberator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solovyov.Numberator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
